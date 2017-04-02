@@ -1,0 +1,21 @@
+h1 {
+color: #650E93;
+text-align: center;
+}
+body{
+	min-width: 700px;
+	background-color: #DAF7A6;
+}
+textarea{
+	 width:600px;
+	 height:150px;
+}
+h3{
+	color: #650E93;
+}
+span{
+	width: 40px;
+}
+p{
+	font-weight:bold;
+}

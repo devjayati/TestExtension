@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Feedback for Tor Browser</title>
+    <script src="popup.js"></script>
+	<link rel="stylesheet" href="popup.css"><!--I PLAN TO USE A SEPARATE CSS FILE FOR THE DESIGN-->
+  </head>
+  <body>
+    <h1>Help Us Make Tor Better</h1>
+	<h2 color> Please note that this feedback is on strictly opt-in basis and no user data is being recorded or transmitted over Tor. 
+	However, in order to make the feedback relevant, we would be collecting system information(browser/platform detail) only. <a href="https://www.torproject.org/">Learn More</a></h2>
+	<h3>Are you running Tor on Mobile/Desktop?</h3><!--I'm not very sure if i should include this since Tor doesnt run directly on Mobile-->
+		<input TYPE="Radio" Name="Device" Value="mobile">Mobile<br>
+		<input TYPE="Radio" Name="Device" Value="desktop">Desktop<br></br>
+	<h3>What do you think about Tor?</h3>
+		<input TYPE="Radio" Name="Feeling" Value="positive">Positive<br>
+		<input TYPE="Radio" Name="Feeling" Value="negative">Negative<br>
+		<input TYPE="Radio" Name="Feeling" Value="neutral">Neutral<br>
+	<h3>What is your problem?/Report a Bug</h3>
+		<input TYPE="Radio" Name="issue" Value="compatibility">Compatibility Issue<br>
+		<input TYPE="Radio" Name="issue" Value="connectivity">Problem in Network Connectivity<br></br>
+		<p>&nbsp&nbsp; Problem in Pluggable Transport(PT)</p>
+		<div>
+			<input TYPE="Radio" Name="issue" Value="version">Version Compatibility (VER_ERROR)<br>
+			<input TYPE="Radio" Name="issue" Value="env">Environment Values(ENV_ERROR)<br>
+			<input TYPE="Radio" Name="issue" Value="proxy">Proxy(PROXY_ERROR)<br>
+			<input TYPE="Radio" Name="issue" Value="cmethod">CMETHOD_ERROR<br>
+			<input TYPE="Radio" Name="issue" Value="ptother">Some Other Problem/ I don't know exactly<br>
+		</div><br></br>
+		<input TYPE="Radio" Name="issue" Value="suggestion">Feature Request<br>
+		<input TYPE="Radio" Name="issue" Value="improve">Suggest Improvement<br>
+		<input TYPE="Radio" Name="issue" Value="other">Some other issue<br>
+		<input TYPE="Radio" Name="issue" Value="commuity">Contact the Tor Community<br>
+		<input TYPE="Radio" Name="issue" Value="compatibility">None! Just here to leave a feedback :)<br>
+	<h3>Please describe problem in detail</h3>
+		<textarea name="textarea" value="detail"></textarea>
+	<h3>Your input will help make Tor better! Please rate us on 1-5, with 5 being the highest(Optional)</h3>
+		<h4>Ease of Use: <input TYPE="Radio" Name="rate" Value="1"><input TYPE="Radio" Name="rate" Value="2"><input TYPE="Radio" Name="rate" Value="3">
+		<input TYPE="Radio" Name="rate" Value="4"><input TYPE="Radio" Name="rate" Value="5"></h4>
+		<h4>Support Help: <input TYPE="Radio" Name="rate" Value="1"><input TYPE="Radio" Name="rate" Value="2"><input TYPE="Radio" Name="rate" Value="3">
+		<input TYPE="Radio" Name="rate" Value="4"><input TYPE="Radio" Name="rate" Value="5"></h4>
+		<h4>Trust: <input TYPE="Radio" Name="rate" Value="1"><input TYPE="Radio" Name="rate" Value="2"><input TYPE="Radio" Name="rate" Value="3">
+		<input TYPE="Radio" Name="rate" Value="4"><input TYPE="Radio" Name="rate" Value="5"></h4>
+		<h4>Does it meet your expectations?: <input TYPE="Radio" Name="rate" Value="1"><input TYPE="Radio" Name="rate" Value="2"><input TYPE="Radio" Name="rate" Value="3">
+		<input TYPE="Radio" Name="rate" Value="4"><input TYPE="Radio" Name="rate" Value="5"></h4>
+    <button id="checkPage">Submit</button>
+  </body>
+</html>
