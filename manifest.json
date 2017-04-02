@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Feedback Extension for Mozilla",
+  "description": "This extension will basically provide feedback for Tor",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ]
+}
